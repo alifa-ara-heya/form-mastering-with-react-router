@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
 
 const RefForm = () => {
-    
+
     const nameRef = useRef(null);
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
 
     // to place the cursor at the name input when the page loads.
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         nameRef.current.focus();
-    },[])
+    }, [])
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -29,8 +29,7 @@ const RefForm = () => {
                 <br />
                 <input defaultValue={'rpjoni@sojoni.klanto'} ref={emailRef} type="email" name='email' />
                 <br />
-                <input type="submit"  value="Submit" />
-
+                <input type="submit" value="Submit" />
             </form>
         </div>
     );
