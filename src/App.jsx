@@ -1,5 +1,6 @@
 
 import './App.css'
+import Grandpa from './components/Grandpa/Grandpa';
 import ReusableForm from './components/ReusableForm/ReusableForm'
 // import HookForm from './components/HookForm/HookForm'
 // import RefForm from './components/RefForm/RefForm'
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
 
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
@@ -50,6 +51,8 @@ function App() {
             <p>Always keep your profile updated.</p>
           </div>
       </ReusableForm>
+
+      <Grandpa></Grandpa>
     </>
   )
 }
